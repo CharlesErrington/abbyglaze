@@ -3195,7 +3195,7 @@
 		background-repeat: repeat,							no-repeat;
 		background-size: auto,							cover;
 		background-blend-mode: multiply;
-		background-color: rgba(0,0,0,.6);
+		background-color: rgba(0,0,0,.7);
 		background-blend-mode: multiply;
 		padding: 12em 0 20em 0;
 		text-align: center;
@@ -4551,6 +4551,8 @@
 	#services > h2 {
 		display: block;
 		width: 100%;
+		text-align: center;
+		padding-bottom: 4rem;
 	}
 
 	/* My css edit 010 - text color in banner */
@@ -4574,4 +4576,8 @@
 
 	#narrowNav {
 		display: none;
+	}
+
+	.major h2 {
+		font-size: 4rem;
 	}
