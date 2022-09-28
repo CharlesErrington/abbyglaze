@@ -106,3 +106,40 @@ const container4 = document.querySelector('.containerBA4');
 document.querySelector('.slider4').addEventListener('input', (e) => {
   container4.style.setProperty('--position', `${e.target.value}%`);
 })
+
+// Initialize and add the map
+function initMap() {
+	// The location of Uluru
+	const uluru = { lat: 51.7337136263397, lng: -0.2204921279766628, };
+	// The map, centered at Uluru
+	const map = new google.maps.Map(document.getElementById("map"), {
+	  zoom: 10,
+	  center: uluru,
+	});
+	// The marker, positioned at Uluru
+	const marker = new google.maps.Marker({
+	  position: uluru,
+	  map: map,
+	});
+  }
+  
+  window.initMap = initMap;
+
+// Slide in code
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        console.log(entry)
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+        } else {
+            entry.target.classList.remove('show');
+        }
+    });
+});
+
+const hiddenElements = document.querySelectorAll('.hiddenLeft');
+hiddenElements.forEach((el) => observer.observe(el));
+
+const hiddenElementsRight = document.querySelectorAll('.hiddenRight');
+hiddenElementsRight.forEach((el) => observer.observe(el));
