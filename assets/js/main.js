@@ -143,3 +143,16 @@ hiddenElements.forEach((el) => observer.observe(el));
 
 const hiddenElementsRight = document.querySelectorAll('.hiddenRight');
 hiddenElementsRight.forEach((el) => observer.observe(el));
+
+var classList = document.getElementById('bottomBanner').classList;
+
+var minWidth840 = window.matchMedia("(min-width: 840px)");
+
+function match() {
+    minWidth840.matches ? classList.remove('show') : classList.add('show')
+	minWidth840.matches ? classList.add('hiddenTop') : classList.remove('hiddenTop');
+}
+
+minWidth840.addListener(match);
+
+match();

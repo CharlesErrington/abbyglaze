@@ -4678,19 +4678,29 @@
     filter: blur(5px);
     transform: translateX(-090%);
     transition: all 1s;
+	
 }
 
 .hiddenRight {
     opacity: 0;
     filter: blur(5px);
-    transform: translateX(100%);
+    transform: translateX(90%);
     transition: all 1s;
+
 }
 
 .show {
     opacity: 1;
     filter: blur(0);
     transform: translateX(0);
+	transition: all 1s;
+}
+
+.hiddenTop {
+	opacity: 0;
+    filter: blur(5px);
+    transform: translateY(-90%);
+    transition: all 1s;
 }
 
 .sliderText {
@@ -4699,4 +4709,73 @@
 
 .beforeAfter h3 {
 	padding-top: 1rem;
+}
+
+#narrowNav {
+	/* z-index: 1000000 !important; */
+	/* position: fixed;
+	right: 0;
+	top: 0;
+	height: 50px; */
+}
+
+#narrowNav #narrowNavUl {
+	/* z-index: 1100000 !important; */
+	/* position: fixed;
+	right: 0;
+	top: 0;
+	height: 50px; */
+}
+
+#narrowNav #narrowNavUl #narrowNavLi {
+	/* z-index: 1200000 !important; */
+	/* position: fixed;
+	right: 0;
+	top: 0;
+	height: 50px; */
+
+}
+
+#narrowNav #narrowNavUl #narrowNavLi #narrowNavPhoneNumber {
+	/* z-index: 1300000 !important; */
+	/* position: fixed;
+	right: 0;
+	top: 0;
+	/* width: 250px;
+	height: 30px; */
+
+	/* padding: 0; */ 
+}
+
+#bodyWrap {
+	max-width: 100%!important; height: auto; overflow: hidden!important;
+}
+
+#bottomBannerContainer {
+	position: fixed;
+	bottom: 0;
+	right: 30px;
+	z-index: 10000;
+}
+
+#bottomBannerContainer ul {
+	list-style: none;
+	
+}
+
+#bottomBannerContainer ul li{
+
+}
+
+.hiddenTop {
+	opacity: 0;
+    filter: blur(5px);
+    transform: translateY(-90%);
+    transition: all 1s;
+}
+
+.button.red {
+	background-color: rgba(200, 0, 0, 0.8);
+	width: 20em;
+
 }
