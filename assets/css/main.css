@@ -3438,7 +3438,17 @@
 
 		
 			#banner {
-				background-attachment: scroll;
+				background-attachment: scroll,							fixed;
+				background-color: #666;
+				background-image: url("images/lotsOfWindows.png"), url("../../images/lotsOfWindows.png");
+				background-position: top left,						center center;
+				background-repeat: repeat,							no-repeat;
+				background-size: auto,							cover;
+				background-blend-mode: multiply;
+				background-color: rgba(0,0,0,.7);
+				background-blend-mode: multiply;
+				padding: 12em 0 20em 0;
+				text-align: center;
 			}
 
 				#banner h2 {
@@ -4778,4 +4788,19 @@
 	background-color: rgba(200, 0, 0, 0.8);
 	width: 20em;
 
+}
+
+#navPhoneNumber.button.phone {
+	background-color: rgba(200, 0, 0, 0.5);
+}
+
+#bannerTestimonials {
+	display: flex;
+	max-width: 800px;
+	justify-content: center;
+	margin: 0 auto;
+}
+
+#bannerTestimonials p {
+	font-size: small;
 }
