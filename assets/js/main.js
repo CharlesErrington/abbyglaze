@@ -144,9 +144,9 @@ hiddenElements.forEach((el) => observer.observe(el));
 const hiddenElementsRight = document.querySelectorAll('.hiddenRight');
 hiddenElementsRight.forEach((el) => observer.observe(el));
 
-var classList = document.getElementById('bottomBanner').classList;
+var classList = document.getElementById('bottomBannerContainer').classList;
 
-var minWidth840 = window.matchMedia("(min-width: 840px)");
+var minWidth840 = window.matchMedia("(min-width: 841px)");
 
 function match() {
     minWidth840.matches ? classList.remove('show') : classList.add('show')
