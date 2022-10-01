@@ -64,9 +64,14 @@
 				});
 
 	// Header.
+
+	// var minWidth840 = window.matchMedia("(max-width: 841px)");
+
 		if (!browser.mobile
 		&&	$header.hasClass('alt')
-		&&	$banner.length > 0) {
+		&&	$banner.length > 0 
+		
+		) {
 
 			$window.on('load', function() {
 
